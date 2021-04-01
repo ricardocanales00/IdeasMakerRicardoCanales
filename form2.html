@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <title>Espire - Bootstrap 4 Admin Template</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/images/logo/favicon.png">
+
+    <!-- plugins css -->
+    <link rel="stylesheet" href="../assets/vendors/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
+    <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+
+    <!-- core css -->
+    <link href="../assets/css/ei-icon.css" rel="stylesheet">
+    <link href="../assets/css/themify-icons.css" rel="stylesheet">
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/css/animate.min.css" rel="stylesheet">
+    <link href="../assets/css/app.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <div class="layout" style="background-color: white">
+            <!-- Page Container START -->
+            <div class="page-container no-pdd">
+                <!-- Header START -->
+                <div class="header navbar" style="width: 100%">
+                    <div class="header-container">
+                        <ul class="nav-left">
+                            <li>
+                                <a href="/">
+                                    <img src="http://miportal.saludybs.com/images/logo/isotipo.png">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav-right">
+                            <li class="user-profile dropdown">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img class="profile-img img-fluid" src="assets/images/user.jpg" alt="">
+                                    <div class="user-info">
+                                        <span class="name pdd-right-5">Nate Leong</span>
+                                        <i class="ti-angle-down font-size-10"></i>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="">
+                                            <i class="ti-settings pdd-right-10"></i>
+                                            <span>Setting</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="ti-user pdd-right-10"></i>
+                                            <span>Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="ti-email pdd-right-10"></i>
+                                            <span>Inbox</span>
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <a href="">
+                                            <i class="ti-power-off pdd-right-10"></i>
+                                            <span>Logout</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="notifications dropdown">
+                                <span class="counter">2</span>
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-bell"></i>
+                                </a>
+
+                                <ul class="dropdown-menu ">
+                                    <li class="notice-header">
+                                        <i class="ti-bell pdd-right-10"></i>
+                                        <span>Notifications</span>
+                                    </li>
+                                    <li>
+                                        <ul class="list-info overflow-y-auto relative scrollable">
+                                            <li>
+                                                <a href="">
+                                                    <img class="thumb-img" src="assets/images/avatars/thumb-5.jpg" alt="">
+                                                    <div class="info">
+                                                        <span class="title">
+                                                            <span class="font-size-14 text-semibold">Jennifer Watkins</span>
+                                                        <span class="text-gray">commented on your <span class="text-dark">post</span></span>
+                                                        </span>
+                                                        <span class="sub-title">5 mins ago</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Header END -->
+
+                <!-- Content Wrapper START -->
+                <div class="main-content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <nav aria-label="breadcrumb">
+                                  <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="form1.html">Inicio</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Solicitud de nuevo sitio</li>
+                                  </ol>
+                                </nav>
+                                <div class="card no-border">
+                                    <div class="card-block">
+                                        <div class="row relative">
+                                            <form id="shipping-form" class="width-100" method="get">
+                                                <div id="rootwizard" class="form-wizard col-md-10 ml-auto mr-auto">
+                                                    <ul class="nav nav-pills nav-fill">
+                                                        <li class="nav-item">
+                                                            <a href="#step1" data-toggle="tab">
+                                                                <span class="step">1</span>
+                                                                <span class="title">Informaci&oacute;n del Cliente</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#step2" data-toggle="tab">
+                                                                <span class="step">2</span>
+                                                                <span class="title">Informaci&oacute;n del Sitio</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#step3" data-toggle="tab">
+                                                                <span class="step">3</span>
+                                                                <span class="title">Identidad y elementos visuales</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#step4" data-toggle="tab">
+                                                                <span class="step">4</span>
+                                                                <span class="title">Confirmaci&oacute;n</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <div id="bar" class="progress progress-info" style="width: 75%">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+                                                    </div>
+                                                    <div class="tab-content">
+                                                        <div id="step1" class="tab-pane fade in active">
+                                                            <div class="row">
+                                                                <div class="col-md-8 mr-auto ml-auto">
+                                                                    <p class="font-size-18">
+                                                                        <h2>¡Comencemos! cu&eacute;ntame sobre t&iacute; y tu empresa</h2>
+                                                                    </p>
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="form-group">
+                                                                                <label>Nombre</label>
+                                                                                <input type="text" class="form-control" name="firstName">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label>Correo electr&oacute;nico actual</label>
+                                                                                <input type="email" class="form-control" name="email">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label>Tel&eacute;fono</label>
+                                                                                <input type="text" class="form-control" name="address">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label>Nombre de la empresa</label>
+                                                                                <input type="text" class="form-control" name="company">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label>¿A qu&eacute; industria pertenece tu compa&ntilde;ia?</label>
+                                                                                <select class="form-control" name="firstName">
+                                                                                    <option>Seleccionar</option>
+                                                                                    <option>Restaurantes</option>
+                                                                                    <option>Farmacéuticas
+                                                                                    </option>
+                                                                                    <option>Educación</option><option>Belleza y cuidado</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-4">
+                                                                    <div class="pdd-horizon-30">
+                                                                        <div class="card">
+                                                                            <div class="card-block">
+                                                                                <img class="img-fluid d-block mrg-horizon-auto" src="../assets/images/others/cart.png" alt="">
+                                                                                <h3 class="card-title mrg-btm-20 text-dark">Venda en línea y encuentre nuevos clientes</h3>
+                                                                                <ul>
+                                                                                    <li>Ten más ventas</li>
+                                                                                    <li>Ofrece alternativas de pago</li>
+                                                                                    <li>Lorem ipsum lorem ipsum</li>
+                                                                                    <li>Lorem ipsum lorem ipsum</li>
+                                                                                    <li>Lorem ipsum lorem ipsum</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="step2" class="tab-pane fade">
+                                                            <div class="row">
+                                                                <div class="col-md-8 mr-auto ml-auto">
+                                                                    <p class="font-size-18">
+                                                                        <h2>Cu&eacute;ntame sobre tu necesidad</h2>
+                                                                    </p>
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="form-group">
+                                                                                <label><b>¿Para qu&eacute; quieres un sitio web?</b></label>
+                                                                                <textarea class="form-control" rows="1"></textarea>
+                                                                                <div class="pdd-top-10">
+                                                                                    <p>Ejemplos:</p>
+                                                                                    <a href="javascript();">
+                                                                                        <div class="tag tag-info">Vender en l&iacute;nea</div>
+                                                                                    </a>
+                                                                                    <div class="tag tag-info">Blog de noticias</div>
+                                                                                    <div class="tag tag-info">Promover mi negocio local</div>
+                                                                                    <div class="tag tag-info">Mantener identidad en l&iacute;nea</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-12">
+                                                                            <div class="form-group">
+                                                                                <label><b>¿Qui&eacute;nes quieres que visiten tu sitio? ¿Cu&aacute;l es tu p&uacute;blico meta?</b></label>
+                                                                                <textarea class="form-control" rows="1"></textarea>
+                                                                                <div class="pdd-top-10">
+                                                                                    <p>Ejemplos:</p>
+                                                                                    <div class="tag tag-warning">Ni&ntilde;os</div>
+                                                                                    <div class="tag tag-warning">J&oacute;venes</div>
+                                                                                    <div class="tag tag-warning">Adultos</div>
+                                                                                    <div class="tag tag-warning">Hombres</div>
+                                                                                    <div class="tag tag-warning">Mujeres</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label><b>¿El sitio es una tienda en l&iacute;nea?</b></label>
+                                                                                <select class="form-control" name="firstName">
+                                                                                    <option>Seleccionar</option>
+                                                                                    <option>S&iacute;</option>
+                                                                                    <option>No</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label><b>¿Requieres modificar el sitio constantemente?</b></label>
+                                                                                <select class="form-control" name="firstName">
+                                                                                    <option>Seleccionar</option>
+                                                                                    <option>S&iacute;</option>
+                                                                                    <option>No</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-4">
+                                                                    <div class="pdd-horizon-30">
+                                                                        <div class="card">
+                                                                            <div class="card-block">
+                                                                                <h3 class="card-title mrg-btm-30 text-dark">Vende en línea y encuentre nuevos clientes</h3>
+                                                                                <ul>
+                                                                                    <li>Ten más ventas</li>
+                                                                                    <li>Ofrece alternativas de pago</li>
+                                                                                    <li>Lorem ipsum lorem ipsum lorem ipsum</li>
+                                                                                    <li>Lorem ipsum lorem ipsum lorem ipsum</li>
+                                                                                    <li>Lorem ipsum lorem ipsum lorem ipsum</li>
+                                                                                </ul>
+
+                                                                                <hr>
+
+                                                                                <h4 class="card-title mrg-btm-30">Summary</h4>
+                                                                                <div class="border bottom">
+                                                                                    <p>Subtotal: <span class="pull-right">$1,340.00</span></p>
+                                                                                    <p>Shipping: <span class="pull-right">$100.00</span></p>
+                                                                                    <p class="mrg-top-20">Discount: <span class="pull-right">$60</span></p>
+                                                                                </div>
+                                                                                <p class="mrg-top-20">Grand Total: <span class="pull-right text-dark font-size-18"><b>$1380.00</b></span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="step3" class="tab-pane fade">
+                                                            <div class="row">
+                                                                <div class="col-md-8 mr-auto ml-auto">
+                                                                    <p class="font-size-18">
+                                                                        <h2>¿Con qué material contamos?</h2>
+                                                                    </p>
+                                                                    <div class="mrg-top-40">
+                                                                        <div class="row">
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label>¿Cuentas con alguno de los siguientes elementos propios?</label>
+                                                                                    <div class="checkbox ">
+                                                                                        <input id="form-2-1" name="form-2-1" type="checkbox" checked="">
+                                                                                        <label for="form-2-1">Fotos</label>
+                                                                                    </div>
+                                                                                    <div class="checkbox">
+                                                                                        <input id="form-2-2" name="form-2-2" type="checkbox">
+                                                                                        <label for="form-2-2">Videos</label>
+                                                                                    </div>
+                                                                                    <div class="checkbox">
+                                                                                        <input id="form-2-3" name="form-2-3" type="checkbox">
+                                                                                        <label for="form-2-3">Infografías</label>
+                                                                                    </div>
+                                                                                    <div class="checkbox">
+                                                                                        <input id="form-2-4" name="form-2-4" type="checkbox">
+                                                                                        <label for="form-2-4">Textos</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label>¿Cuentas con manual de identidad visual? Logotipo/ Paleta de colores / Tipografías</label>
+                                                                                    <div class="radio radio-inline radio-primary">
+                                                                                        <input type="radio" name="form-3" id="form-3-1">
+                                                                                        <label for="form-3-1">Sí</label>
+                                                                                    </div>
+                                                                                    <div class="radio radio-inline radio-primary">
+                                                                                        <input type="radio" name="form-3" id="form-3-2" checked="">
+                                                                                        <label for="form-3-2">No</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="pdd-horizon-30">
+                                                                        <div class="card">
+                                                                            <div class="card-block">
+                                                                                <h3 class="card-title mrg-btm-30 text-dark">Vende en línea y encuentre nuevos clientes</h3>
+                                                                                <ul>
+                                                                                    <li>Ten más ventas</li>
+                                                                                    <li>Ofrece alternativas de pago</li>
+                                                                                    <li>Lorem ipsum lorem ipsum lorem ipsum</li>
+                                                                                    <li>Lorem ipsum lorem ipsum lorem ipsum</li>
+                                                                                    <li>Lorem ipsum lorem ipsum lorem ipsum</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="step4" class="tab-pane fade">
+
+                                                            <div class="row">
+                                                                <div class="col-md-8">
+                                                                    <table class="table table-hover product-table">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th></th>
+                                                                                <th>Item</th>
+                                                                                <th>Quantity</th>
+                                                                                <th>Price</th>
+                                                                                <th class="text-right">Subtotal</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <img class="img-fluid" src="assets/images/others/product-1.jpg" alt="">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-10 no-mrg-btm">Vincent Chase VC 5158/P</p>
+                                                                                    <b>Size: Medium</b>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-20">1</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-20">$180.00</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-20 text-right">$180.00</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <img class="img-fluid" src="assets/images/others/product-2.jpg" alt="">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-10 no-mrg-btm">Vincent Chase VC 5168</p>
+                                                                                    <b>Size: Medium</b>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-20">4</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-20">$200.00</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-20 text-right">$800.00</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <img class="img-fluid" src="assets/images/others/product-3.jpg" alt="">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-10 no-mrg-btm">Vincent Chase VC 5168</p>
+                                                                                    <b>Size: Medium</b>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-20">2</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-20">$180.00</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-20 text-right">$360.00</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="pdd-horizon-30">
+                                                                        <div class="card">
+                                                                            <div class="card-block">
+                                                                                <h4 class="card-title mrg-btm-30">Summary</h4>
+                                                                                <div class="border bottom">
+                                                                                    <p>Subtotal: <span class="pull-right">$1,340.00</span></p>
+                                                                                    <p>Shipping: <span class="pull-right">$100.00</span></p>
+                                                                                    <p class="mrg-top-20">Discount: <span class="pull-right">$60</span></p>
+                                                                                </div>
+                                                                                <p class="mrg-top-20">Grand Total: <span class="pull-right text-dark font-size-18"><b>$1380.00</b></span></p>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                            <div class="row">
+                                                                <div class="col-md-6 mr-auto ml-auto">
+                                                                    <img class="img-fluid d-block mrg-horizon-auto" src="../assets/images/others/cart.png" alt="">
+                                                                    <div class="text-center">
+                                                                        <h2>Thanks for Your Order</h2>
+                                                                        <p>Your order has been placed successfully.
+                                                                            <br> Click learn more to know more about the order status.
+                                                                        </p>
+                                                                        <button class="btn btn-info btn-inverse btn-lg">Learn More</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="wizard-pager">
+                                                            <div class="">
+                                                                <button type="button" class="btn btn-default button-previous btn-rounded"><i class="ei-left-chevron"></i>Anterior</button>
+                                                                <button type="button" class="btn btn-info button-next pull-right btn-rounded">Siguiente <i class="ei-right-chevron"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Wrapper END -->
+            </div>
+        </div>
+    </div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <!-- plugins js -->
+    <script src="../assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../assets/vendors/PACE/pace.min.js"></script>
+    <script src="../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- build:js assets/js/app.min.js -->
+    <!-- core js -->
+    <script src="../assets/js/app.js"></script>
+    <!-- page plugins js 
+    <script src="../assets/vendors/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="../assets/vendors/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>-->
+    <!-- endbuild -->
+
+    <!-- page js -->
+
+    <script src="../assets/js/forms/form-wizard.js"></script>
+
+
+</body>
+</html>
